@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/foundation.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="css/app.css">
+  <script src="js/vendor/modernizr.js"></script>
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <meta name="viewport" content active="width=device-width, initial-scale=1">
+  <title>Cheatsheet</title>
+</head>
+
+
+<body>
+  <div class="row">
+    <div class="large-12 columns">
+
+
+      <div class="row">
+        <div class="large-12 columns">
+          <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+              <li class="name">
+                <h1>
+                  <a href="#">Cheatsheet.co</a>
+                </h1>
+              </li>
+              <li class="toggle-topbar menu-icon">
+                <a href="#">
+                  <span>menu</span>
+                </a>
+              </li>
+            </ul>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li class="divider"></li>
+                <li>
+                  <a href="#">HTML</a>
+                </li>
+                <li class="divider"></li>
+                <li><a href="#">CSS</a></li>
+                <li class="divider"></li>
+                <li>
+                  <a href="#">Emmet</a>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="row">
+
+        <img src="img/emmet.png">
+        <div class="hide-for-small panel">
+          <h3>Emmet c'est quoi ? </h3>
+          <h5 class="subheader">Ce petit plugin va permettre simplement et efficacement d’accélérer votre rythme de développement. Si j'annonce que je vais créer un tableau HTML contenant 8 lignes de 5 cellules chacune, contenant elles aussi 8 liens chacune. Et si, j’ajoute
+            que tout ce contenu HTML, je vais le générer grâce à une seule ligne de code? Vous allez rire, mais pas si je fais tout ça avec Emmet ...
+          </h5>
+        </div>
+      </div>
+
+      <div class="large-12 columns">
+
+        <h3>Syntaxe</h3>
+        <div class="row">
+          <div class="large-12 columns">
+            <ul class="accordion" data-accordion>
+              <li class="accordion-navigation">
+                <h4>Ajouter un enfant ou Child :</h4>
+                <div id="panel1a" class="content active ">
+                  <p>nav&gt;ul&gt;li donne : &lt;nav&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;ul&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;/ul&gt;
+                    <br> &lt;/nav&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Ajouter un élément frère ou Sibling :</h4>
+                <div id="panel2a" class="content active">
+                  <p>div+ul+li donne : &lt;nav&gt;
+                    <br> &lt;ul&gt;
+                    <br> &lt;li&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Multiplier les éléments :</h4>
+                <div id="panel3a" class="content active">
+                  <p>
+                    ul&gt;li*5 donne :
+                    <br> &lt;ul&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;/li&gt;
+                    <br> &lt;/ul&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Commencer la numérotation à X nombre :</h4>
+                <div id="panel4a" class="content active">
+                  <p>
+                    ul&gt;li.item$@3*5 donne :
+                    <br> &lt;ul&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item3"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item4"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item5"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item6"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item7"&gt;&lt;/li&gt;
+                    <br> &lt;/ul&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Ordre décroissant :</h4>
+                <div id="panel5a" class="content active">
+                  <p>
+                    ul&gt;li.item$@-*5 donne :
+                    <br> &lt;ul&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item5"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item4"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item3"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item2"&gt;&lt;/li&gt;
+                    <br> &nbsp;&nbsp;&nbsp; &lt;li&gt; class="item1"&gt;&lt;/li&gt;
+                    <br> &lt;/ul&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Remonter d'un élément enfant :</h4>
+                <div id="panel6a" class="content active">
+                  <p>
+                    &lt;div&gt;p&gt;em{hello}^a donne :
+                    <br>&nbsp;&nbsp;&lt;div&gt;
+                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; &lt;em&gt; hello &lt;/em&gt; &lt;/p&gt;
+                    <br>&nbsp;&nbsp;&lt;a href=""&gt; /a&gt;
+                    <br>&lt;/div&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Ajouter un attribut :</h4>
+                <div id="panel7a" class="content active">
+                  <p>img[src="URL" alt="ALT"] donne :
+                    <br> &lt;img src="URL" alt="ALT"&gt;
+                  </p>
+                </div>
+              </li>
+              <li class="accordion-navigation">
+                <h4>Ajouter une classe ou un ID :</h4>
+                <div id="panel8a" class="content active">
+                  <p>ul.wrapper donne :
+                    <br> &lt;ul&gt; class="wrapper"&lt;/ul&gt;
+                  </p>
+                  <p>ul#item0 donne :
+                    <br> &lt;ul&gt; id="item0"&lt;/ul&gt;
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="row">
+    <div class="large-12 columns">
+      <hr/>
+      <div class="row">
+        <div class="large-6 columns">
+          <p>© Copyright no one at all. Go to town.</p>
+        </div>
+        <div class="large-6 columns">
+          <ul class="inline-list right">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
